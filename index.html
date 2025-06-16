@@ -12,12 +12,31 @@
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+    <header class="main-header">
+      <h1>🛒 Min Handleliste</h1>
+      <p>Legg til, sorter og filtrer dine varer</p>
+    </header>
     <main>
-      <h1>Home page</h1>
+      <h1>Handleliste</h1>
+
+  <input type="text" id="itemInput" placeholder="Skriv inn en vare" />
+  <div class="buttons">
+    <button onclick="addItemEnd()">Legg til sist</button>
+    <button onclick="addItemStart()">Legg til først</button>
+    <button onclick="removeItemEnd()">Fjern sist</button>
+    <button onclick="removeItemStart()">Fjern først</button>
+    <button onclick="sortList()">Sorter A–Å</button>
+    <button onclick="clearList()">Tøm liste</button>
+  </div>
+
+  <input type="text" id="filterInput" placeholder="Filtrer varer..." oninput="filterList()" />
+
+  <div id="message"></div>
+  <ul id="shoppingList"></ul>
+
+  <script src="script.js"></script>
+
+
     </main>
   </body>
 </html>
