@@ -1,4 +1,6 @@
 console.log('Hello!');
+
+
 const shoppingList = [];
 const listElement = document.getElementById("shoppingList");
 const input = document.getElementById("itemInput");
